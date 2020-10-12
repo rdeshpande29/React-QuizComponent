@@ -13,11 +13,7 @@ class Quiz extends Component{
      
       return(
           <div className="QuizQuestion">
-              {quizData.quiz_questions.map((quiz)=>{
-                 return(
-                <p key={quiz.id}>{quiz.instruction_text}</p>
-                  )
-              })}
+            {quizData.quiz_questions[0].instruction_text }
           
           </div>
       )
