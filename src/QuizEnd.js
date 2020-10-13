@@ -3,16 +3,16 @@ import React, { Component } from 'react'
 class QuizEnd extends Component{
     constructor(props){
         super(props)
-        this.handleResetLink=this.handleResetLink.bind(this)
+        this.handleResetClick=this.handleResetClick.bind(this)
     }
-    handleResetLink(){
-        this.props.resetLinkHandler()
+    handleResetClick(){
+        this.props.resetClickHandler()
     }
     render(){
         return( 
             <div>
                 <p>Thanks for playing!</p>
-                <a href='' onClick={this.handleResetLink}>Reset Quiz</a>
+                <a href='' onClick={this.handleResetClick}>Reset Quiz</a>
           </div>
         )
     }
